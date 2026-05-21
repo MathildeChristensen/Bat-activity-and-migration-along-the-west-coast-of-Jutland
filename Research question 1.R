@@ -32,8 +32,6 @@ library(lubridate)
 #               UPLOADING DATA
 
 # Upload data
-load("/Users/mathildes.achristensen/Desktop/Speciale/R data - mine resultater og DCE/combined_data.RData")
-load("/Users/mathildes.achristensen/Desktop/Speciale/R data - mine resultater og DCE/dat_model_land_new.RData")
 
 # Combining data
 dat_model_total = rbind(dat_model_land, dat_model_land_new)
