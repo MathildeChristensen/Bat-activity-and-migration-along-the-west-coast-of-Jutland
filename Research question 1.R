@@ -76,7 +76,6 @@ dat_model_total[, date_end := date + 1]
 dat_model_total[, hour_cent := ifelse(hour <= 8, hour, hour - 24)]
 
 # Upload station data
-stationLoc = fread("/Users/mathildes.achristensen/Desktop/Speciale/R data - mine resultater og DCE/stations.csv")
 
 # Matching stationdata to the big dataset
 dat_model_total <- stationLoc[, .(station_id, lat, long, distance_coast)][
